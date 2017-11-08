@@ -34,6 +34,3 @@ WantedBy = multi-user.target
 EOF
 systemctl enable glassfish.service;
 systemctl start glassfish.service;
-firewall-cmd --zone=pubic --add-port=8080/tcp --permanent;
-firewall-cmd --zone=pubic --add-port=4848/tcp --permanent;
-firewall-cmd --reload;
